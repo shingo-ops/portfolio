@@ -99,7 +99,7 @@
     </div>
 
     <div class="svg-container">
-        <svg viewBox="0 0 1200 1750" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 1200 1530" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <!-- グラデーション定義 -->
                 <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -192,199 +192,175 @@
                     .pulse-ring {
                         animation: pulse 2s infinite;
                     }
+
+                    .impact-text {
+                        font-family: Arial, sans-serif;
+                        font-size: 22px;
+                        font-weight: 800;
+                        fill: #fbbf24;
+                    }
                 </style>
             </defs>
 
             <!-- フェーズ1: リサーチ＆準備 -->
             <g id="phase1">
                 <!-- 背景 -->
-                <rect x="50" y="50" width="1100" height="380" rx="20" fill="rgba(59, 130, 246, 0.08)" stroke="url(#blueGradient)" stroke-width="2"/>
+                <rect x="50" y="50" width="1100" height="290" rx="20" fill="rgba(59, 130, 246, 0.08)" stroke="url(#blueGradient)" stroke-width="2"/>
 
                 <!-- フェーズタイトル -->
                 <text class="phase-label" x="600" y="90" text-anchor="middle" fill="url(#blueGradient)">フェーズ 1: リサーチ＆出品シートに自動転記</text>
 
-                <!-- ステップ1: リサーチ作業者 -->
+                <!-- ステップ1: リサーチ業務（統合） -->
                 <g class="step-card">
-                    <rect x="100" y="130" width="480" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#blueGradient)" stroke-width="2"/>
+                    <rect x="250" y="130" width="700" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#blueGradient)" stroke-width="2"/>
 
-                    <circle class="icon-circle" cx="170" cy="190" r="35" fill="url(#blueGradient)"/>
-                    <g transform="translate(170, 190)">
+                    <circle class="icon-circle" cx="330" cy="190" r="35" fill="url(#blueGradient)"/>
+                    <g transform="translate(330, 190)">
                         <circle cx="0" cy="-6" r="8" fill="#ffffff"/>
                         <path d="M-12,12 Q-12,4 0,4 Q12,4 12,12 L12,16 L-12,16 Z" fill="#ffffff"/>
                         <circle cx="6" cy="6" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
                         <line x1="10" y1="10" x2="14" y2="14" stroke="#ffffff" stroke-width="2"/>
                     </g>
 
-                    <text class="step-number" x="110" y="210">01</text>
-                    <text class="step-title" x="230" y="175">リサーチ作業者</text>
-                    <text class="step-desc" x="230" y="200">商品を調べて市場価格を分析し、</text>
-                    <text class="step-desc" x="230" y="220">利益が出るかを計算します</text>
+                    <text class="step-number" x="260" y="210">01</text>
+                    <text class="step-title" x="390" y="175">リサーチ業務</text>
+                    <text class="step-desc" x="390" y="200">カテゴリなどの自動取得、出品シートへの自動記入</text>
                 </g>
 
-                <!-- ステップ2: 自動処理 -->
-                <g class="step-card">
-                    <rect x="620" y="130" width="480" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#purpleGradient)" stroke-width="2"/>
-
-                    <circle class="icon-circle" cx="690" cy="190" r="35" fill="url(#purpleGradient)"/>
-                    <g transform="translate(690, 190)">
-                        <circle cx="0" cy="0" r="10" fill="none" stroke="#ffffff" stroke-width="2"/>
-                        <circle cx="0" cy="0" r="5" fill="#ffffff"/>
-                        <rect x="-1.5" y="-15" width="3" height="5" fill="#ffffff"/>
-                        <rect x="-1.5" y="10" width="3" height="5" fill="#ffffff"/>
-                        <rect x="-15" y="-1.5" width="5" height="3" fill="#ffffff"/>
-                        <rect x="10" y="-1.5" width="5" height="3" fill="#ffffff"/>
-                    </g>
-
-                    <text class="step-number" x="630" y="210">02</text>
-                    <text class="step-title" x="750" y="175">自動化（第1弾）</text>
-                    <text class="step-desc" x="750" y="200">システムが自動的に出品シートへ</text>
-                    <text class="step-desc" x="750" y="220">商品情報を入力します</text>
+                <!-- インパクトメッセージ -->
+                <g>
+                    <text class="impact-text" x="600" y="290" text-anchor="middle">✓ eBayからの自動取得 + 出品シートへの自動入力を実装して手作業低減</text>
                 </g>
             </g>
 
             <!-- 矢印 -->
-            <path class="flow-line" d="M 600 450 L 600 500"/>
+            <path class="flow-line" d="M 600 360 L 600 410"/>
 
             <!-- フェーズ2: 確認＆調整 -->
             <g id="phase2">
-                <rect x="50" y="520" width="1100" height="380" rx="20" fill="rgba(16, 185, 129, 0.08)" stroke="url(#greenGradient)" stroke-width="2"/>
+                <rect x="50" y="430" width="1100" height="290" rx="20" fill="rgba(16, 185, 129, 0.08)" stroke="url(#greenGradient)" stroke-width="2"/>
 
-                <text class="phase-label" x="600" y="560" text-anchor="middle" fill="url(#greenGradient)">フェーズ 2: 出品シートで編集&出品</text>
+                <text class="phase-label" x="600" y="470" text-anchor="middle" fill="url(#greenGradient)">フェーズ 2: 出品シートで編集&出品</text>
 
-                <!-- ステップ3: 出品作業担当者 -->
+                <!-- ステップ2: 出品の自動化（統合） -->
                 <g class="step-card">
-                    <rect x="100" y="600" width="480" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#greenGradient)" stroke-width="2"/>
+                    <rect x="250" y="510" width="700" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#greenGradient)" stroke-width="2"/>
 
-                    <circle class="icon-circle" cx="170" cy="660" r="35" fill="url(#greenGradient)"/>
-                    <g transform="translate(170, 660)">
+                    <circle class="icon-circle pulse-ring" cx="330" cy="570" r="35" fill="url(#greenGradient)"/>
+                    <g transform="translate(330, 570)">
                         <circle cx="0" cy="-6" r="8" fill="#ffffff"/>
                         <path d="M-12,12 Q-12,4 0,4 Q12,4 12,12 L12,16 L-12,16 Z" fill="#ffffff"/>
                         <circle cx="8" cy="-12" r="6" fill="#10b981"/>
                         <path d="M5,-12 L7,-10 L11,-14" stroke="#ffffff" stroke-width="2" fill="none"/>
                     </g>
 
-                    <text class="step-number" x="110" y="680">03</text>
-                    <text class="step-title" x="230" y="645">出品作業担当者</text>
-                    <text class="step-desc" x="230" y="670">商品情報を確認し、画像を設定し、</text>
-                    <text class="step-desc" x="230" y="690">価格を最終調整します</text>
+                    <text class="step-number" x="260" y="590">02</text>
+                    <text class="step-title" x="390" y="555">出品の自動化</text>
+                    <text class="step-desc" x="390" y="580">手作業の転記をなくし、出品の全自動化</text>
                 </g>
 
-                <!-- ステップ4: データファイル生成 -->
-                <g class="step-card">
-                    <rect x="620" y="600" width="480" height="120" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#orangeGradient)" stroke-width="2"/>
-
-                    <circle class="icon-circle pulse-ring" cx="690" cy="660" r="35" fill="url(#orangeGradient)"/>
-                    <g transform="translate(690, 660)">
-                        <rect x="-8" y="-12" width="16" height="24" rx="2" fill="#ffffff"/>
-                        <line x1="-4" y1="-6" x2="4" y2="-6" stroke="#f59e0b" stroke-width="1.5"/>
-                        <line x1="-4" y1="-1" x2="4" y2="-1" stroke="#f59e0b" stroke-width="1.5"/>
-                        <line x1="-4" y1="4" x2="4" y2="4" stroke="#f59e0b" stroke-width="1.5"/>
-                        <line x1="-4" y1="9" x2="2" y2="9" stroke="#f59e0b" stroke-width="1.5"/>
-                    </g>
-
-                    <text class="step-number" x="630" y="680">04</text>
-                    <text class="step-title" x="750" y="645">データファイル生成</text>
-                    <text class="step-desc" x="750" y="670">出品データを作成し、</text>
-                    <text class="step-desc" x="750" y="690">2つの処理を同時に開始します</text>
+                <!-- インパクトメッセージ -->
+                <g>
+                    <text class="impact-text" x="600" y="670" text-anchor="middle">✓ 手作業の転記をなくし、出品の全自動化</text>
                 </g>
             </g>
 
             <!-- 分岐矢印 -->
-            <path class="flow-line" d="M 600 920 L 600 970"/>
+            <path class="flow-line" d="M 600 720 L 600 770"/>
 
             <!-- 分岐ポイント -->
-            <circle cx="600" cy="1000" r="25" fill="url(#orangeGradient)" opacity="0.9"/>
-            <text x="600" y="1010" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">⚡</text>
+            <circle cx="600" cy="800" r="25" fill="url(#orangeGradient)" opacity="0.9"/>
+            <text x="600" y="810" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">⚡</text>
 
             <!-- 左右への分岐 -->
-            <path class="flow-line" d="M 600 1025 L 600 1070 L 300 1070 L 300 1110"/>
-            <path class="flow-line" d="M 600 1025 L 600 1070 L 900 1070 L 900 1110"/>
+            <path class="flow-line" d="M 600 825 L 600 870 L 300 870 L 300 910"/>
+            <path class="flow-line" d="M 600 825 L 600 870 L 900 870 L 900 910"/>
 
             <!-- 分岐ラベル -->
-            <rect x="210" y="1055" width="100" height="30" rx="6" fill="rgba(139, 92, 246, 0.9)"/>
-            <text x="260" y="1076" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">並行処理①</text>
+            <rect x="210" y="855" width="100" height="30" rx="6" fill="rgba(139, 92, 246, 0.9)"/>
+            <text x="260" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">並行処理①</text>
 
-            <rect x="850" y="1055" width="100" height="30" rx="6" fill="rgba(139, 92, 246, 0.9)"/>
-            <text x="900" y="1076" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">並行処理②</text>
+            <rect x="850" y="855" width="100" height="30" rx="6" fill="rgba(139, 92, 246, 0.9)"/>
+            <text x="900" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">並行処理②</text>
 
             <!-- フェーズ3: 並行処理 -->
             <g id="phase3">
                 <!-- 左側: eBay出品 -->
                 <g>
-                    <rect x="50" y="1130" width="500" height="450" rx="20" fill="rgba(236, 72, 153, 0.08)" stroke="url(#pinkGradient)" stroke-width="2"/>
-                    <text class="phase-label" x="300" y="1170" text-anchor="middle" fill="url(#pinkGradient)">並行処理 ①: eBay出品</text>
+                    <rect x="50" y="930" width="500" height="450" rx="20" fill="rgba(236, 72, 153, 0.08)" stroke="url(#pinkGradient)" stroke-width="2"/>
+                    <text class="phase-label" x="300" y="970" text-anchor="middle" fill="url(#pinkGradient)">並行処理 ①: eBay出品</text>
 
-                    <!-- ステップ5: セルスタアップロード -->
+                    <!-- ステップ3: セルスタアップロード -->
                     <g class="step-card">
-                        <rect x="100" y="1210" width="400" height="140" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#pinkGradient)" stroke-width="2"/>
+                        <rect x="100" y="1010" width="400" height="140" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#pinkGradient)" stroke-width="2"/>
 
-                        <circle class="icon-circle" cx="160" cy="1280" r="35" fill="url(#pinkGradient)"/>
-                        <g transform="translate(160, 1280)">
+                        <circle class="icon-circle" cx="160" cy="1080" r="35" fill="url(#pinkGradient)"/>
+                        <g transform="translate(160, 1080)">
                             <rect x="-10" y="-6" width="20" height="12" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
                             <path d="M0,-10 L-6,0 L-3,0 L-3,6 L3,6 L3,0 L6,0 Z" fill="#ffffff"/>
                         </g>
 
-                        <text class="step-number" x="110" y="1295">05</text>
-                        <text class="step-title" x="220" y="1260">セルスタアップロード</text>
-                        <text class="step-desc" x="220" y="1285">セルスタ経由でeBayへ商品データを</text>
-                        <text class="step-desc" x="220" y="1305">アップロードし、自動的に出品します</text>
+                        <text class="step-number" x="110" y="1095">03</text>
+                        <text class="step-title" x="220" y="1060">セルスタアップロード</text>
+                        <text class="step-desc" x="220" y="1085">セルスタ経由でeBayへ商品データを</text>
+                        <text class="step-desc" x="220" y="1105">アップロードし、自動的に出品します</text>
                     </g>
 
-                    <path class="flow-line" d="M 300 1370 L 300 1410"/>
+                    <path class="flow-line" d="M 300 1170 L 300 1210"/>
 
                     <!-- 完了 -->
                     <g class="step-card">
-                        <rect x="100" y="1430" width="400" height="100" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="url(#greenGradient)" stroke-width="2"/>
+                        <rect x="100" y="1230" width="400" height="100" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="url(#greenGradient)" stroke-width="2"/>
 
-                        <circle class="icon-circle" cx="160" cy="1480" r="30" fill="url(#greenGradient)"/>
-                        <path d="M150,1480 L156,1488 L170,1472" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <circle class="icon-circle" cx="160" cy="1280" r="30" fill="url(#greenGradient)"/>
+                        <path d="M150,1280 L156,1288 L170,1272" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
 
-                        <text class="step-title" x="210" y="1475" fill="#10b981">✓ eBay出品完了</text>
-                        <text class="step-desc" x="210" y="1495">商品がeBayに掲載されました</text>
+                        <text class="step-title" x="210" y="1275" fill="#10b981">✓ eBay出品完了</text>
+                        <text class="step-desc" x="210" y="1295">商品がeBayに掲載されました</text>
                     </g>
                 </g>
 
                 <!-- 右側: データ保管 -->
                 <g>
-                    <rect x="650" y="1130" width="500" height="450" rx="20" fill="rgba(99, 102, 241, 0.08)" stroke="url(#indigoGradient)" stroke-width="2"/>
-                    <text class="phase-label" x="900" y="1170" text-anchor="middle" fill="url(#indigoGradient)">並行処理 ②: データ保管</text>
+                    <rect x="650" y="930" width="500" height="450" rx="20" fill="rgba(99, 102, 241, 0.08)" stroke="url(#indigoGradient)" stroke-width="2"/>
+                    <text class="phase-label" x="900" y="970" text-anchor="middle" fill="url(#indigoGradient)">並行処理 ②: データ保管</text>
 
-                    <!-- ステップ6: データベース保存 -->
+                    <!-- ステップ4: データベース保存 -->
                     <g class="step-card">
-                        <rect x="700" y="1210" width="400" height="140" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#indigoGradient)" stroke-width="2"/>
+                        <rect x="700" y="1010" width="400" height="140" rx="12" fill="rgba(30, 58, 95, 0.9)" stroke="url(#indigoGradient)" stroke-width="2"/>
 
-                        <circle class="icon-circle" cx="760" cy="1280" r="35" fill="url(#indigoGradient)"/>
-                        <g transform="translate(760, 1280)">
+                        <circle class="icon-circle" cx="760" cy="1080" r="35" fill="url(#indigoGradient)"/>
+                        <g transform="translate(760, 1080)">
                             <ellipse cx="0" cy="-8" rx="12" ry="4" fill="#ffffff"/>
                             <rect x="-12" y="-8" width="24" height="16" fill="#ffffff"/>
                             <ellipse cx="0" cy="8" rx="12" ry="4" fill="#ffffff"/>
                             <ellipse cx="0" cy="0" rx="12" ry="4" fill="#6366f1" opacity="0.5"/>
                         </g>
 
-                        <text class="step-number" x="710" y="1295">06</text>
-                        <text class="step-title" x="820" y="1260">データ保管庫に保存</text>
-                        <text class="step-desc" x="820" y="1285">出品情報をデータベースにバックアップ</text>
-                        <text class="step-desc" x="820" y="1305">として保存し、履歴を記録します</text>
+                        <text class="step-number" x="710" y="1095">04</text>
+                        <text class="step-title" x="820" y="1060">データ保管庫に保存</text>
+                        <text class="step-desc" x="820" y="1085">出品情報をデータベースにバックアップ</text>
+                        <text class="step-desc" x="820" y="1105">として保存し、履歴を記録します</text>
                     </g>
 
-                    <path class="flow-line" d="M 900 1370 L 900 1410"/>
+                    <path class="flow-line" d="M 900 1170 L 900 1210"/>
 
                     <!-- 完了 -->
                     <g class="step-card">
-                        <rect x="700" y="1430" width="400" height="100" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="url(#greenGradient)" stroke-width="2"/>
+                        <rect x="700" y="1230" width="400" height="100" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="url(#greenGradient)" stroke-width="2"/>
 
-                        <circle class="icon-circle" cx="760" cy="1480" r="30" fill="url(#greenGradient)"/>
-                        <path d="M750,1480 L756,1488 L770,1472" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <circle class="icon-circle" cx="760" cy="1280" r="30" fill="url(#greenGradient)"/>
+                        <path d="M750,1280 L756,1288 L770,1272" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
 
-                        <text class="step-title" x="810" y="1475" fill="#10b981">✓ データ保管完了</text>
-                        <text class="step-desc" x="810" y="1495">バックアップが保存されました</text>
+                        <text class="step-title" x="810" y="1275" fill="#10b981">✓ データ保管完了</text>
+                        <text class="step-desc" x="810" y="1295">バックアップが保存されました</text>
                     </g>
                 </g>
             </g>
 
             <!-- フッター -->
-            <text x="600" y="1650" text-anchor="middle" font-size="15" fill="#64748b">eBay出品ツール - 完全自動化フロー</text>
-            <text x="600" y="1680" text-anchor="middle" font-size="13" fill="#64748b">リサーチから出品完了まで、シームレスに連携</text>
+            <text x="600" y="1450" text-anchor="middle" font-size="15" fill="#64748b">eBay出品ツール - 完全自動化フロー</text>
+            <text x="600" y="1480" text-anchor="middle" font-size="13" fill="#64748b">リサーチから出品完了まで、シームレスに連携</text>
         </svg>
     </div>
 
